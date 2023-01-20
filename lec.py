@@ -1,18 +1,26 @@
-print("Координаты точки:")
-x = float (input("x = "))
-y = float (input("y = "))
+#Ускоренная обработка данных: lambda, filter, map, zip, enumerate(3 задачи):
 
-if x > 0 and y > 0:
-    print("Точка в I четверти")
-elif x < 0 and y > 0:
-    print("Точка во II четверти")
-elif x < 0 and y < 0:
-    print("Точка в III четверти")
-elif x > 0 and y < 0:
-    print("Точка в IV четверти")
-elif x == 0 and y == 0:
-    print("Точка в центре координат")
-elif x == 0:
-    print("Точка на оси X")
-elif y == 0:
-    print("Точка на оси Y")
+1.
+#lst = ["Ульяновскс", "Москва", "Рязань", "Ярославль", "Тверь", "Тула"]
+#b = map(len, lst)
+#a = list(b)
+#print(a)
+
+#b = map(lambda x: x.replace("а", "1"), lst)
+#c = map(sorted, b)
+#res1 = list(c)
+#print(res1)
+
+2.
+#a = [3,6,7,-5]
+#b = [1,-1,2,1]
+#it = zip (a, b)
+#print (it)
+#print(list(it))
+
+3.
+#maximum = (lambda a, b: a if a>b else b)
+#print(maximum(6, 7))
+
+#min = (lambda a, b, c: a if (a<=b)and(b<=c) else (b if (b<=a)and(b<=c) else c))
+#print(min(5,6,7))
